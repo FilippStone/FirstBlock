@@ -1,11 +1,19 @@
-numbers = [2, 5, 13, 7, 6, 4]
-size = 6
-sum = 0
-avg = 0
+numbers = [1, 8, 3, 8, 2, 6, 8, 8]
 index = 0
-while index < size:
-    if (index < size):
-        sum += numbers[index]
-        index += 1
-        avg = sum / size
-print(avg)
+maximum = numbers[index]
+count_maximal = 0
+
+while index < numbers.length:
+    if numbers[index] > maximum:
+        maximum = numbers[index]
+        count_maximal = 1
+    else:
+        if numbers[index] == maximum:
+            count_maximal = count_maximal + 1
+    index = index + 1
+print(count_maximal)
+
+
+
+
+
